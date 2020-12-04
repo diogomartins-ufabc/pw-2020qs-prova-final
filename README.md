@@ -1,2 +1,2 @@
-# pw-2020qs-prova-final
-Prova final de PW
+# Prova final de PW
+Este repositório deve ser a raiz do seu projeto.
