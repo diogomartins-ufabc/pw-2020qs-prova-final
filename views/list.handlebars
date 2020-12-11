@@ -1,0 +1,36 @@
+{{> login-flash }}
+
+<h2 class="list-title">
+    Listagem de postagem
+
+    {{#if authenticated}}
+        <a href="/add">
+            <button type="button" class="btn btn-outline-primary add-btn">
+                Adicionar postagem
+            </button>
+        </a>
+    {{/if}}
+</h2>
+
+
+<table class="table table-striped list">
+
+    {{#each posts as |post|}}
+        <tr>
+            <td>
+                {{#if (isEmpty post.capa)}}
+                    <img src="/static/img/guest_post.png" alt="">
+                {{else}}
+                    <img src="/picture/{{post.capa}}" alt="">
+                {{/if}}
+                
+                <h5><a href="/post/{{post.id}}">{{post.titulo}}</a></h5>
+                <p>Por {{post.autor}}, em {{post.data}}</p>
+                <p>{{shorten post.conteudo}}</p>
+            </td>
+        </tr>
+    {{/each}}
+
+    
+
+</table>

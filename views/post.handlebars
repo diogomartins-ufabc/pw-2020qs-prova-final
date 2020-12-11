@@ -1,0 +1,17 @@
+<h3>{{post.titulo}}</h3>
+<p><em>{{post.autor}}</em></p>
+<p>
+{{#if (isNotEmpty post.local)}}
+    {{post.local}}, 
+{{/if}}
+{{post.data}}
+</p>
+
+{{#if (isEmpty post.capa)}}
+<img src="/static/img/guest_post.png" alt="">
+{{else}}
+<img width="300px" src="/picture/{{post.capa}}" alt="">
+{{/if}}
+
+
+<p>{{post.conteudo}}</p>
