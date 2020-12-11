@@ -1,2 +1,3 @@
 # Prova final de PW
-Este repositório deve ser a raiz do seu projeto.
+Código starter para a prova final. Completar a camada model. Prosseguir então
+ para a parte 2.
